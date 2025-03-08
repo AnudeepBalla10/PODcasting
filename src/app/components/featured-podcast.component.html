@@ -1,0 +1,6 @@
+<div class="featured-podcast">
+  <h2>Featured Episode</h2>
+  <img [src]="latestEpisode.coverImage" alt="Cover Image">
+  <h3>{{ latestEpisode.title }}</h3>
+  <app-audio-player [audioSrc]="latestEpisode.audioSrc"></app-audio-player>
+</div>

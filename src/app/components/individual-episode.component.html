@@ -1,0 +1,7 @@
+<section class="individual-episode">
+  <h2>{{ episode.title }}</h2>
+  <img [src]="episode.coverImage" alt="Episode Cover">
+  <app-audio-player [audioSrc]="episode.audioSrc"></app-audio-player>
+  <p>{{ episode.description }}</p>
+  <button (click)="downloadEpisode(episode.audioSrc)">Download</button>
+</section>

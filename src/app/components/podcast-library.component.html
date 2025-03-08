@@ -1,0 +1,7 @@
+<section class="podcast-library">
+  <h2>Podcast Library</h2>
+  <input [(ngModel)]="searchQuery" placeholder="Search episodes...">
+  <div class="grid">
+    <app-podcast-card *ngFor="let podcast of filterEpisodes()" [podcast]="podcast"></app-podcast-card>
+  </div>
+</section>
